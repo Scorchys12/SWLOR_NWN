@@ -5761,7 +5761,7 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "Revêtement de droïde éboueur"
+                      "value": "Revï¿½tement de droï¿½de ï¿½boueur"
                     },
                     "RESREF": {
                       "type": "resref",
@@ -8768,17 +8768,6 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "raivor_skin"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Rogue Droid"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "roguedroid"
                     }
                   },
                   {

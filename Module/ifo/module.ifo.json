@@ -2090,20 +2090,6 @@
         "__struct_id": 6,
         "Area_Name": {
           "type": "resref",
-          "value": "tat_tuskcavebot"
-        }
-      },
-      {
-        "__struct_id": 6,
-        "Area_Name": {
-          "type": "resref",
-          "value": "tat_tuskcavemain"
-        }
-      },
-      {
-        "__struct_id": 6,
-        "Area_Name": {
-          "type": "resref",
           "value": "tat_tuskcavetunn"
         }
       },
@@ -2903,6 +2889,27 @@
         "Area_Name": {
           "type": "resref",
           "value": "prefabdarkbase"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tat_tuskcavemain"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tat_wormden"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tat_tuskcavebot"
         }
       }
     ]
