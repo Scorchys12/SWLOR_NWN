@@ -199,6 +199,20 @@ namespace SWLOR.Game.Server.Feature.ItemDefinition
                         }
                     }
 
+                    var resref = GetResRef(item);
+                    switch (resref)
+                    {
+                        case "nalhutta_fizz":
+                            // Earthy fungal fizz: boosts max stamina but slows recovery.
+                            foodEffect.STMRegen -= 2;
+                            break;
+                        case "cartel_cakes":
+                            // Potent spice high: stronger HP regeneration but exhausting on stamina.
+                            foodEffect.STMRegen -= 4;
+                            Stat.ReduceStamina(user, 25);
+                            break;
+                    }
+
                     StatusEffect.Apply(user, user, StatusEffectType.Food, duration, foodEffect);
                 });
         }
