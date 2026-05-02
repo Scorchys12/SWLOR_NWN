@@ -247,7 +247,7 @@ namespace SWLOR.Game.Server.Feature.LootTableDefinition
 		private void GreatArkanianDragon()
 		{
 			_builder.Create("NARSHADDAA_GREAT_ARKANIAN_DRAGON")
-				.AddItem("fiberp_high", 20)
+				.AddItem("ark_drg_scales", 20)
 				.AddItem("hyphae_wood", 20)
 				.AddItem("wild_meat", 15)
 				.AddItem("ns_rack_meat", 15)

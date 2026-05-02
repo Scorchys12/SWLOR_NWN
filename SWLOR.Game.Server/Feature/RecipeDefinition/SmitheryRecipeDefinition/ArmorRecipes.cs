@@ -508,7 +508,7 @@ namespace SWLOR.Game.Server.Feature.RecipeDefinition.SmitheryRecipeDefinition
 				.ResearchCostModifier(0.2f)
 				.Component("ref_arkoxit", 2)
 				.Component("lth_high", 20)
-				.Component("fiberp_high", 20)
+				.Component("ark_drg_scales", 20)
 				.Component("chiro_shard", 2)
 				.Component("ark_dragon_troph", 5)
 				.Component("ref_scordspar", 5)

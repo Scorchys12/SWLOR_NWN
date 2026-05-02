@@ -18381,6 +18381,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Arkanian Dragon Scales"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "ark_drg_scales"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Armor Enhancement - Accuracy I"
                     },
                     "RESREF": {
@@ -52455,6 +52466,17 @@
                           "__struct_id": 0,
                           "NAME": {
                             "type": "cexostring",
+                            "value": "Glowcutter"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "glow_cutter"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
                             "value": "Hunter Knife I"
                           },
                           "RESREF": {
@@ -56718,6 +56740,17 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "mando_pistol"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Night Pistol"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "night_pistol"
                           }
                         },
                         {

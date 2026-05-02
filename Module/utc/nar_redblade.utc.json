@@ -86,11 +86,11 @@
   },
   "Cha": {
     "type": "byte",
-    "value": 9
+    "value": 15
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 2.0
+    "value": 8.0
   },
   "ClassList": {
     "type": "list",
@@ -114,7 +114,7 @@
   },
   "Color_Skin": {
     "type": "byte",
-    "value": 123
+    "value": 30
   },
   "Color_Tattoo1": {
     "type": "byte",
@@ -130,7 +130,7 @@
   },
   "Con": {
     "type": "byte",
-    "value": 11
+    "value": 17
   },
   "Conversation": {
     "type": "resref",
@@ -142,7 +142,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 36
+    "value": 200
   },
   "DecayTime": {
     "type": "dword",
@@ -160,7 +160,7 @@
   },
   "Dex": {
     "type": "byte",
-    "value": 17
+    "value": 20
   },
   "Disarmable": {
     "type": "byte",
@@ -180,7 +180,7 @@
         "__struct_id": 2,
         "EquippedRes": {
           "type": "resref",
-          "value": "ch_armor"
+          "value": "npc_smuggler_m"
         }
       },
       {
@@ -305,11 +305,11 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 36
+    "value": 200
   },
   "Int": {
     "type": "byte",
-    "value": 10
+    "value": 15
   },
   "Interruptable": {
     "type": "byte",
@@ -339,7 +339,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 36
+    "value": 212
   },
   "NaturalAC": {
     "type": "byte",
@@ -632,7 +632,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 938
+    "value": 453
   },
   "SpecAbilityList": {
     "type": "list",
@@ -644,7 +644,7 @@
   },
   "Str": {
     "type": "byte",
-    "value": 10
+    "value": 22
   },
   "Subrace": {
     "type": "cexostring",
@@ -715,7 +715,7 @@
   },
   "Wis": {
     "type": "byte",
-    "value": 10
+    "value": 15
   },
   "xAppearance_Head": {
     "type": "word",
