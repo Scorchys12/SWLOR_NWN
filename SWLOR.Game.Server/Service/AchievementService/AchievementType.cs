@@ -386,6 +386,9 @@ namespace SWLOR.Game.Server.Service.AchievementService
 
 		[Achievement("Explore Smuggler's Moon Station - Abandoned", "Explore Smuggler's Moon Station - Abandoned.", true)]
 		ExploreSmugglersMoonStationAbandoned = 139,
+
+		[Achievement("Explore Smuggler's Moon Station - Lower Level", "Explore Smuggler's Moon Station - Lower Level.", true)]
+		ExploreSmugglersMoonStationLowerLevel = 140,
 	}
 
     public class AchievementAttribute: Attribute
