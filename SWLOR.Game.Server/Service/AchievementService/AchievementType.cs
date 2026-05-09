@@ -383,6 +383,9 @@ namespace SWLOR.Game.Server.Service.AchievementService
 
 		[Achievement("Explore Nar Shaddaa Orbit", "Explore Nar Shaddaa's Orbit.", true)]
 		ExploreNarShaddaaOrbit = 138,
+
+		[Achievement("Explore Smuggler's Moon Station - Abandoned", "Explore Smuggler's Moon Station - Abandoned.", true)]
+		ExploreSmugglersMoonStationAbandoned = 139,
 	}
 
     public class AchievementAttribute: Attribute
