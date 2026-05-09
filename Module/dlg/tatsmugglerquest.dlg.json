@@ -1077,7 +1077,7 @@
               },
               "Value": {
                 "type": "cexostring",
-                "value": " smuggler_favor"
+                "value": "smuggler_favor"
               }
             }
           ]
