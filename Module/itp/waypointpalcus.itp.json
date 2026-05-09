@@ -450,6 +450,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Nar Shaddaa Black Serpents"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nar_blackserpent"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Nar Shaddaa CMD Droid"
                     },
                     "RESREF": {
