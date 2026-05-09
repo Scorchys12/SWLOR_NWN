@@ -12083,6 +12083,13 @@
           "type": "cexostring",
           "value": ""
         }
+      },
+      {
+        "__struct_id": 5,
+        "Comment": {
+          "type": "cexostring",
+          "value": "Emergency /stuck recovery waypoint template. One per area; instance tag must be STUCK_WAYPOINT (server uses nearest). Do not use for patrol paths."
+        }
       }
     ]
   }
