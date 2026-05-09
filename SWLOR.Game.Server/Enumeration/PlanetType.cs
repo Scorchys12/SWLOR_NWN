@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace SWLOR.Game.Server.Enumeration
 {
@@ -77,18 +78,20 @@ namespace SWLOR.Game.Server.Enumeration
 			1000,
 			true)]
 		Dantooine = 128,
+		[Description("Smuggler's Moon")]
 		[Planet("Smuggler's Moon",
 			"Smuggler's Moon - ",
 			"SmugglersMoon_Orbit",
 			"SMUGGLERS_MOON_LANDING",
-					0,
+			0,
 			true)]
 		SmugglersMoon = 256,
+		[Description("Smuggler's Moon Station")]
 		[Planet("Smuggler's Moon Station",
 			"Smuggler's Moon Station - ",
 			"Smugglers_Station_Orbit",
 			"SMUGGLERS_STATION_LANDING",
-					0,
+			0,
 			true)]
 		SmugglersMoonStation = 512,
 	}
