@@ -64,6 +64,21 @@ namespace SWLOR.Game.Server.Service.WeatherService
                     MildText = "It is cold, the sky is clear, and there is a gentle breeze.",
                     WarmCloudyText = "It is cold."
                 },
+                [PlanetType.Arkania] = new WeatherClimate
+                {
+                    HeatModifier = -9,
+                    HumidityModifier = -2,
+                    WindModifier = +2,
+                    HasSnowStorms = true,
+                    FreezingText = "The Arkanian cold bites through exposed seams in your gear.",
+                    SnowText = "Fine ice falls like dust, whitening every exposed surface.",
+                    WindyText = "A hard polar wind drags loose snow across the ground.",
+                    ColdWindyText = "The wind cuts like a vibroblade, numbing exposed flesh.",
+                    CloudyText = "Low clouds press over the ice, trapping the generator's glow under a gray ceiling.",
+                    ColdCloudyText = "Heavy cloud cover holds the cold close, and every gust feels sharper than the last.",
+                    MildText = "The air is bitter, but calm enough that the city can breathe for a moment.",
+                    StormText = "A whiteout swallows the horizon; only the generator lights feel real."
+                },
                 [PlanetType.Korriban] = new WeatherClimate
                 {
                     HeatModifier = +3,
