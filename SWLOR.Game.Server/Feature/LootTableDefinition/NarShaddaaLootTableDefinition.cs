@@ -170,7 +170,6 @@ namespace SWLOR.Game.Server.Feature.LootTableDefinition
 				.IsRare()
 				.AddItem("ns_holo_jelly", 1, 1, true)
 				.AddItem("emerald", 1, 1, true)
-				.AddItem("emerald", 1, 1, true)
 				.AddItem("map_82", 2, 1, true)
 				.AddItem("map_83", 2, 1, true)
 				.AddItem("map_84", 2, 1, true)

@@ -148,7 +148,6 @@ namespace SWLOR.Game.Server.Feature.SpawnDefinition
                 .AddSpawn(ObjectType.Creature, "garkaniandragon")
                 .WithFrequency(1)
                 .RandomlyWalks()
-                .WithFrequency(100)
                 .ReturnsHome();
         }
         private void DragonLoot()
