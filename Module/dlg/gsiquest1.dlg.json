@@ -484,11 +484,23 @@
               "__struct_id": 0,
               "Active": {
                 "type": "resref",
-                "value": ""
+                "value": "condition"
               },
               "ConditionParams": {
                 "type": "list",
-                "value": []
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "Key": {
+                      "type": "cexostring",
+                      "value": "condition-on-quest-state"
+                    },
+                    "Value": {
+                      "type": "cexostring",
+                      "value": "nar_great_arkanian_dragon 2"
+                    }
+                  }
+                ]
               },
               "Index": {
                 "type": "dword",
@@ -503,11 +515,23 @@
               "__struct_id": 1,
               "Active": {
                 "type": "resref",
-                "value": ""
+                "value": "condition"
               },
               "ConditionParams": {
                 "type": "list",
-                "value": []
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "Key": {
+                      "type": "cexostring",
+                      "value": "condition-on-quest-state"
+                    },
+                    "Value": {
+                      "type": "cexostring",
+                      "value": "nar_great_arkanian_dragon 1"
+                    }
+                  }
+                ]
               },
               "Index": {
                 "type": "dword",
@@ -1369,7 +1393,7 @@
               },
               "Value": {
                 "type": "cexostring",
-                "value": "nar_great_arkanian_dragon 2 3"
+                "value": "nar_great_arkanian_dragon 3"
               }
             }
           ]
