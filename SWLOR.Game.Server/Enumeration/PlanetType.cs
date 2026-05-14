@@ -83,7 +83,7 @@ namespace SWLOR.Game.Server.Enumeration
 			"Smuggler's Moon - ",
 			"SmugglersMoon_Orbit",
 			"SMUGGLERS_MOON_LANDING",
-			0,
+			500,
 			true)]
 		SmugglersMoon = 256,
 		[Description("Smuggler's Moon Station")]
