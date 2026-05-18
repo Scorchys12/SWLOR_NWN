@@ -329,23 +329,44 @@ namespace SWLOR.Game.Server.Service
             DelayCommand(6.0f, () => { ApplySandstorm(oTarget, oArea); });
         }
 
-        public static void ApplySnowstorm(uint oTarget, uint oArea)
+        public static void ApplySnowstorm(uint oTarget, uint oArea, int damageDice = 2)
         {
             if (GetArea(oTarget) != oArea) return;
             if (GetIsDead(oTarget)) return;
             if (GetIsPC(oTarget) && GetIsPC(GetMaster(oTarget)) == false) return;
+
+            if (damageDice <= 0) return;
+            damageDice = Math.Clamp(damageDice, 1, 3);
 
             //apply
             var eEffect =
                 EffectLinkEffects(
                     EffectVisualEffect(VisualEffect.Vfx_Dur_Iceskin),
                     EffectDamage(
-                        d6(2),
+                        d6(damageDice),
                         DamageType.Cold));
 
             ApplyEffectToObject(DurationType.Instant, eEffect, oTarget);
 
-            DelayCommand(6.0f, () => { ApplySnowstorm(oTarget, oArea); });
+            DelayCommand(6.0f, () => { ApplySnowstorm(oTarget, oArea, damageDice); });
+        }
+
+        private static int GetSnowstormDamageDice(uint oArea)
+        {
+            if (!GetName(oArea).StartsWith("Arkania - ", StringComparison.Ordinal))
+                return 2;
+
+            if (GetLocalInt(oArea, "ARKANIA_SAFE_FROM_COLD") == 1)
+                return 0;
+
+            var generator = ArkaniaGenerator.GetState();
+            if (generator.HeatReserve < 15)
+                return 3;
+
+            if (generator.HeatReserve >= 70)
+                return 1;
+
+            return 2;
         }
 
         public static void DoWeatherEffects(uint oCreature)
@@ -396,16 +417,20 @@ namespace SWLOR.Game.Server.Service
             }
             else if (bIsPC && GetLocalInt(oArea, "SNOW_STORM") == 1)
             {
-                var eEffect =
-                    EffectLinkEffects(
-                        EffectVisualEffect(VisualEffect.Vfx_Dur_Iceskin),
-                        EffectDamage(
-                            d6(2),
-                            DamageType.Cold));
+                var damageDice = GetSnowstormDamageDice(oArea);
+                if (damageDice > 0)
+                {
+                    var eEffect =
+                        EffectLinkEffects(
+                            EffectVisualEffect(VisualEffect.Vfx_Dur_Iceskin),
+                            EffectDamage(
+                                d6(damageDice),
+                                DamageType.Cold));
 
-                ApplyEffectToObject(DurationType.Instant, eEffect, oCreature);
+                    ApplyEffectToObject(DurationType.Instant, eEffect, oCreature);
 
-                DelayCommand(6.0f, () => { ApplySnowstorm(oCreature, oArea); });
+                    DelayCommand(6.0f, () => { ApplySnowstorm(oCreature, oArea, damageDice); });
+                }
             }
             else if (bIsPC)
             {

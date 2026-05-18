@@ -76,7 +76,15 @@ namespace SWLOR.Game.Server.Enumeration
             "DANTOOINE_LANDING",
             1000,
             true)]
-            Dantooine = 128,
+        Dantooine = 128,
+        // Keep inactive until the module has Arkania landing/orbit waypoints and travel content.
+        [Planet("Arkania",
+            "Arkania - ",
+            "Arkania_Orbit",
+            "ARKANIA_LANDING",
+            600,
+            false)]
+        Arkania = 256,
     }
 
     public class PlanetAttribute : Attribute

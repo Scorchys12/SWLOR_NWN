@@ -4,6 +4,15 @@ This folder contains comprehensive documentation for the SWLOR.Game.Server proje
 
 ## Available Documentation
 
+
+### [ArkaniaSurvivalPlan.md](ArkaniaSurvivalPlan.md)
+A focused implementation plan for an Arkania survival project inspired by grim cold-weather survival themes while staying inside SWLOR's existing KOTOR-era systems. This includes:
+
+- **Quest package ideas** for rescue, fuel gathering, generator repairs, and storm expeditions
+- **Weather implementation notes** that reuse the existing climate and snowstorm damage systems
+- **Generator resource design** with a small persistent state entity sketch
+- **Implementation phases and guardrails** to keep the feature from becoming too large too early
+
 ### [Builders.md](Builders.md)
 Comprehensive documentation of all builder classes in the SWLOR.Game.Server project. This includes:
 
