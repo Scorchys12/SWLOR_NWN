@@ -329,14 +329,14 @@ namespace SWLOR.Game.Server.Service
             DelayCommand(6.0f, () => { ApplySandstorm(oTarget, oArea); });
         }
 
-        public static void ApplySnowstorm(uint oTarget, uint oArea, int damageDice = 2)
+        public static void ApplySnowstorm(uint oTarget, uint oArea)
         {
             if (GetArea(oTarget) != oArea) return;
             if (GetIsDead(oTarget)) return;
             if (GetIsPC(oTarget) && GetIsPC(GetMaster(oTarget)) == false) return;
 
+            var damageDice = GetSnowstormDamageDice(oArea);
             if (damageDice <= 0) return;
-            damageDice = Math.Clamp(damageDice, 1, 3);
 
             //apply
             var eEffect =
@@ -348,7 +348,7 @@ namespace SWLOR.Game.Server.Service
 
             ApplyEffectToObject(DurationType.Instant, eEffect, oTarget);
 
-            DelayCommand(6.0f, () => { ApplySnowstorm(oTarget, oArea, damageDice); });
+            DelayCommand(6.0f, () => { ApplySnowstorm(oTarget, oArea); });
         }
 
         private static int GetSnowstormDamageDice(uint oArea)
@@ -429,7 +429,7 @@ namespace SWLOR.Game.Server.Service
 
                     ApplyEffectToObject(DurationType.Instant, eEffect, oCreature);
 
-                    DelayCommand(6.0f, () => { ApplySnowstorm(oCreature, oArea, damageDice); });
+                    DelayCommand(6.0f, () => { ApplySnowstorm(oCreature, oArea); });
                 }
             }
             else if (bIsPC)
