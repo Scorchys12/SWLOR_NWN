@@ -373,6 +373,16 @@ namespace SWLOR.Game.Server.Service.SkillService
            false,
            false)]
            Ewokese = 35,
+
+        [Skill(SkillCategoryType.Crafting,
+            "Biotechnology",
+            50,
+            true,
+            "Ability to process biological materials into specialized crafting components.",
+            true,
+            true,
+            false)]
+        Biotechnology = 36,
     }
 
     public class SkillAttribute : Attribute

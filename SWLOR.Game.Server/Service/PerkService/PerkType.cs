@@ -305,5 +305,10 @@
         AdrenalStim = 298,
         ResearchProjects = 299,
         PommelStrike = 300,
+        BiologicalAnalysis = 301,
+        LaboratoryTechniques = 302,
+        SamplePreservation = 303,
+        AdvancedBiologicalProcessing = 304,
+        BiotechnologyResearchProjects = 305,
     }
 }
