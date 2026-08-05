@@ -807,6 +807,12 @@
         LargeHouseStyle4 = 1516,
         LabStyle1 = 1517,
 
+        PlantCulture = 4799,
+        FungalCulture = 4800,
+        ProteinExtract = 4801,
+        AntivenomBase = 4802,
+        IncubationMedium = 4803,
+
         #endregion
 
         #region Cooking: 2001-3000
@@ -1029,6 +1035,12 @@
         KeebadasBinggona = 2210,
         SandoGDizzards = 2211,
         CartelCakes = 2212,
+
+        PlantCulture = 4799,
+        FungalCulture = 4800,
+        ProteinExtract = 4801,
+        AntivenomBase = 4802,
+        IncubationMedium = 4803,
 
         #endregion
 
@@ -2590,6 +2602,12 @@
         CapitalPowerDiverter = 4797,
         CorvetteCrusader = 4798,
 
+
+        PlantCulture = 4799,
+        FungalCulture = 4800,
+        ProteinExtract = 4801,
+        AntivenomBase = 4802,
+        IncubationMedium = 4803,
 
         #endregion
 

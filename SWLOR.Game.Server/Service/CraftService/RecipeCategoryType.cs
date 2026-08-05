@@ -132,6 +132,8 @@ namespace SWLOR.Game.Server.Service.CraftService
         StarshipAmmo = 61,
         [RecipeCategory("Capital Module Recipes", true)]
         CapitalShipModule = 62,
+        [RecipeCategory("Biological Component", true)]
+        BiologicalComponent = 63,
     }
 
     public class RecipeCategoryAttribute : Attribute
