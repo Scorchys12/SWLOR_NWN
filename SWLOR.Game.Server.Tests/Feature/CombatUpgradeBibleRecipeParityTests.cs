@@ -53,8 +53,8 @@ public class CombatUpgradeBibleRecipeParityTests
     };
 
     /// <summary>
-    /// Live recipes that are intentionally not documented in the Bible recipe tabs. These are
-    /// the crafting-skill submission-token recipes used by the item submission flow.
+    /// Live recipes that are intentionally not documented in the Bible recipe tabs. This includes
+    /// crafting-skill submission tokens and regional content delivered without a workbook sync.
     /// </summary>
     private static readonly HashSet<RecipeType> UndocumentedLiveRecipeExceptions = new()
     {
@@ -63,6 +63,17 @@ public class CombatUpgradeBibleRecipeParityTests
         RecipeType.WeaponSubmissionTokenSmithery,
         RecipeType.WeaponSubmissionTokenEngineering,
         RecipeType.FoodSubmissionTokenAgriculture,
+        RecipeType.EchaniFoldedDumplings,
+        RecipeType.SilverleafBrothNoodles,
+        RecipeType.FirebrandChiliNoodles,
+        RecipeType.MoonSteamedBuns,
+        RecipeType.SilverleafFlatbread,
+        RecipeType.EshanHearthpot,
+        RecipeType.FrostglazeClaypotRice,
+        RecipeType.WatchersRicePorridge,
+        RecipeType.MarbledTeaEggs,
+        RecipeType.GingerSteamedFish,
+        RecipeType.StickyGlazedFowl,
     };
 
     /// <summary>

@@ -11,18 +11,28 @@ namespace SWLOR.Game.Server.Feature.LootTableDefinition
         {
             _builder.Create("ESHAN_NEOCRUSADER")
                 .AddItem("esh_mando_salv", 10, 2)
+                .AddItem("esh_pearlgrain", 6, 2)
+                .AddItem("esh_firepepper", 4, 1)
                 .AddGold(150, 5);
 
             _builder.Create("ESHAN_DIRE_WOLF")
-                .AddItem("esh_wolf_pelt", 10, 2);
+                .AddItem("esh_wolf_pelt", 10, 2)
+                .AddItem("esh_silvleaf", 6, 2)
+                .AddItem("esh_mooncap", 4, 1);
 
             _builder.Create("ESHAN_FROST_WOLF")
                 .AddItem("esh_wolf_pelt", 10, 2)
-                .AddItem("esh_frost_fang", 4, 1);
+                .AddItem("esh_frost_fang", 4, 1)
+                .AddItem("esh_frostroot", 6, 2);
 
             _builder.Create("ESHAN_DIRE_WOLF_ALPHA")
                 .AddItem("esh_wolf_pelt", 10, 3)
-                .AddItem("esh_frost_fang", 10, 2);
+                .AddItem("esh_frost_fang", 10, 2)
+                .AddItem("esh_tealeaf", 6, 2);
+
+            _builder.Create("ESHAN_WILD_FOWL")
+                .AddItem("esh_fowl_meat", 10, 2)
+                .AddItem("esh_fowl_egg", 7, 2);
 
             _builder.Create("ESHAN_THYRSIAN_EXILE")
                 .AddItem("esh_sun_insignia", 10, 1)
@@ -32,6 +42,7 @@ namespace SWLOR.Game.Server.Feature.LootTableDefinition
             _builder.Create("ESHAN_SCRAPYARD_SMUGGLER")
                 .AddItem("elec_flawed", 5, 1)
                 .AddItem("elec_good", 5, 1)
+                .AddItem("esh_syrup", 5, 1)
                 .AddGold(250, 10);
 
             _builder.Create("ESHAN_MAP_RARES")

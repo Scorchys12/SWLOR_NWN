@@ -27,6 +27,11 @@ namespace SWLOR.Game.Server.Feature.SpawnDefinition
                 .RandomlyWalks()
                 .ReturnsHome()
 
+                .AddSpawn(ObjectType.Creature, "esh_wildfowl")
+                .WithFrequency(45)
+                .RandomlyWalks()
+                .ReturnsHome()
+
                 .AddSpawn(ObjectType.Creature, "esh_frostwolf")
                 .WithFrequency(60)
                 .RandomlyWalks()
