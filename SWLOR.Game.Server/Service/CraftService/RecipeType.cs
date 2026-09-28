@@ -1485,6 +1485,17 @@ namespace SWLOR.Game.Server.Service.CraftService
         TombwalkerBroth = 2268,
         SnowblindHuntersStew = 2269,
         NightMarchReserve = 2270,
+        EchaniFoldedDumplings = 2271,
+        SilverleafBrothNoodles = 2272,
+        FirebrandChiliNoodles = 2273,
+        MoonSteamedBuns = 2274,
+        SilverleafFlatbread = 2275,
+        EshanHearthpot = 2276,
+        FrostglazeClaypotRice = 2277,
+        WatchersRicePorridge = 2278,
+        MarbledTeaEggs = 2279,
+        GingerSteamedFish = 2280,
+        StickyGlazedFowl = 2281,
 
         #endregion
 
