@@ -73,7 +73,8 @@ public class LootTableDefinitionTests
         {
             "esh_direwolf", "esh_frostwolf", "esh_gorakvesh", "esh_nc_captain",
             "esh_nc_heavy", "esh_nc_hunter", "esh_nc_medic", "esh_nc_scout",
-            "esh_nc_vanguard", "esh_scrap_smug", "esh_sunguard", "esh_wolfalpha"
+            "esh_nc_vanguard", "esh_scrap_smug", "esh_sunguard", "esh_wildfowl",
+            "esh_wolfalpha"
         };
         var tables = new EshanLootTableDefinition().BuildLootTables();
 
