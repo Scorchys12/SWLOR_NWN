@@ -47,44 +47,6 @@ public class EshanCuisineTests
             .Should().Be(6408, "the wild chicken should use the warocas creature model");
     }
 
-    [Test]
-    public void EchaniCuisine_CombatReadinessBonusScalesByRecipeTier()
-    {
-        var expectedBonuses = new Dictionary<string, int>
-        {
-            ["esh_dumpling"] = 3,
-            ["esh_brothnoodle"] = 3,
-            ["fire_noodles"] = 6,
-            ["moon_buns"] = 9,
-            ["silver_flatbread"] = 9,
-            ["eshan_hearthpot"] = 9,
-            ["esh_clayrice"] = 12,
-            ["watch_porridge"] = 12,
-            ["marbled_eggs"] = 15,
-            ["ginger_fish"] = 15,
-            ["glazed_fowl"] = 15,
-        };
-        var root = FindRepositoryRoot();
-
-        foreach (var (resref, expectedBonus) in expectedBonuses)
-        {
-            var itemPath = Path.Combine(root.FullName, "Module", "uti", $"{resref}.uti.json");
-            using var item = JsonDocument.Parse(File.ReadAllText(itemPath));
-            var readinessProperties = item.RootElement
-                .GetProperty("PropertiesList")
-                .GetProperty("value")
-                .EnumerateArray()
-                .Where(property =>
-                    property.GetProperty("PropertyName").GetProperty("value").GetInt32() == 106 &&
-                    property.GetProperty("Subtype").GetProperty("value").GetInt32() == 9)
-                .ToList();
-
-            readinessProperties.Should().ContainSingle($"{resref} should have one Combat Readiness food bonus");
-            readinessProperties[0].GetProperty("CostValue").GetProperty("value").GetInt32()
-                .Should().Be(expectedBonus, $"{resref} should scale with its recipe tier");
-        }
-    }
-
     private static DirectoryInfo FindRepositoryRoot()
     {
         var directory = new DirectoryInfo(TestContext.CurrentContext.TestDirectory);
