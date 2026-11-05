@@ -82735,7 +82735,67 @@
         }
       },
       {
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Stuck - Eshan - Verdant Crown"
+          }
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 0
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "STUCK_WAYPOINT"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "wp_stuck"
+        },
         "__struct_id": 5,
+        "XPosition": {
+          "type": "float",
+          "value": 18.0
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 38.5
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 2.2
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 1.541428310757299e-43
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 1.0
+        }
+      },
+      {
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -82774,6 +82834,56 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_038"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -82794,59 +82904,9 @@
           "type": "float",
           "value": 2.200006484985352
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_038"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -82885,6 +82945,71 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_TRANSFER"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "vc_access_arrival_1"
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_039"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -82905,74 +83030,9 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_TRANSFER"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "vc_access_arrival_1"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_039"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83011,6 +83071,56 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_040"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83031,59 +83141,9 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_040"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83122,6 +83182,56 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "gardens"
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_041"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83142,59 +83252,9 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "gardens"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_041"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83233,6 +83293,71 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_TRANSFER"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "vc_access_arrival_0"
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_042"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83253,74 +83378,9 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_TRANSFER"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "vc_access_arrival_0"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_042"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83359,6 +83419,56 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_043"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83379,59 +83489,9 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_043"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83470,6 +83530,71 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": [
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_SCENE"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_HOST"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": ""
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_TRANSFER"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "eshan_lowercity"
+              },
+              "__struct_id": 0
+            },
+            {
+              "Name": {
+                "type": "cexostring",
+                "value": "ECHANI_NEXT"
+              },
+              "Type": {
+                "type": "dword",
+                "value": 3
+              },
+              "Value": {
+                "type": "cexostring",
+                "value": "es_monk_path_044"
+              },
+              "__struct_id": 0
+            }
+          ]
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83490,74 +83615,9 @@
           "type": "float",
           "value": 2.200006484985352
         },
-        "VarTable": {
-          "type": "list",
-          "value": [
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_SCENE"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_HOST"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": ""
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_TRANSFER"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "eshan_lowercity"
-              }
-            },
-            {
-              "__struct_id": 0,
-              "Name": {
-                "type": "cexostring",
-                "value": "ECHANI_NEXT"
-              },
-              "Type": {
-                "type": "dword",
-                "value": 3
-              },
-              "Value": {
-                "type": "cexostring",
-                "value": "es_monk_path_044"
-              }
-            }
-          ]
-        }
+        "__struct_id": 5
       },
       {
-        "__struct_id": 5,
         "Appearance": {
           "type": "byte",
           "value": 1
@@ -83598,6 +83658,10 @@
           "type": "resref",
           "value": ""
         },
+        "VarTable": {
+          "type": "list",
+          "value": []
+        },
         "XOrientation": {
           "type": "float",
           "value": 4.224568749218635e-39
@@ -83618,10 +83682,7 @@
           "type": "float",
           "value": 2.2
         },
-        "VarTable": {
-          "type": "list",
-          "value": []
-        }
+        "__struct_id": 5
       }
     ]
   }
