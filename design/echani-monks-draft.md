@@ -2,7 +2,7 @@
 
 Master Vaelis, Disciple Ren and Disciple Sai use their own tags and controller. Their hooded vest/coat pieces are catalog-based approximations of the supplied reference. Color indices are provisional until rendered in the client.
 
-Temple courtyard placement is inferred from the supplied screenshot and the stone-pattern floor/kiosk cluster at (110, 21) in Silver Gate; it needs client confirmation.
+The temple group uses Silver Gate's garden courtyard, identified by the circular paving at (10.86, 38.13), maple and waterfall in the owner's screenshot. Master Vaelis starts at (10.8, 39), Ren at (9.3, 36.5), and Sai at (12.3, 36.5). The temple stop and map note are at (10.8, 37.5); departure and return join the street at (10.6, 55).
 
 Route: Silver Gate temple, Old Quarter residents, Tunnels, Riverway, Veylan Groves, Farmlands/housing, return through Silver Gate, Highcrest, Verdant Crown, Hearth Ward/starport, Proving Grounds, Keshan Heights, Keshan Peaks, Spa Resort, then return. Existing transition endpoints supply transfer destinations. Cross-area transfers occur only after all three reach the authored source stop. Paths, elevation changes, door clearance and same-area shuttle access need live verification.
 

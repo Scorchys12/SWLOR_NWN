@@ -70,6 +70,39 @@ public class EchaniTempleMonksTests
     }
 
     [Test]
+    public void TempleGroup_UsesTheGardenCourtyardAndItsStreetApproach()
+    {
+        var area = Read("Module/git/pw_ar_sc_eshanci.git.json");
+        var paving = Value(area, "Placeable List").EnumerateArray().Single(item =>
+            Value(item, "Appearance").GetInt32() == 31994 &&
+            Math.Abs(Value(item, "X").GetDouble() - 10.86) < 0.01 &&
+            Math.Abs(Value(item, "Y").GetDouble() - 38.13) < 0.01);
+        foreach (var tag in new[] { "es_monk_master", "es_monk_ren", "es_monk_sai" })
+        {
+            var monk = Value(area, "Creature List").EnumerateArray().Single(item =>
+                Value(item, "Tag").GetString() == tag);
+            Math.Abs(Value(monk, "XPosition").GetDouble() - Value(paving, "X").GetDouble())
+                .Should().BeLessThan(4.5, "the monks belong on the garden's circular paving");
+            Math.Abs(Value(monk, "YPosition").GetDouble() - Value(paving, "Y").GetDouble())
+                .Should().BeLessThan(4.5);
+        }
+        foreach (var tag in new[] { "es_monk_path_000", "es_monk_note_00" })
+        {
+            var point = Value(area, "WaypointList").EnumerateArray().Single(item =>
+                Value(item, "Tag").GetString() == tag);
+            Value(point, "XPosition").GetDouble().Should().Be(10.8);
+            Value(point, "YPosition").GetDouble().Should().Be(37.5);
+        }
+        foreach (var tag in new[] { "es_monk_path_001", "es_monk_path_083" })
+        {
+            var point = Value(area, "WaypointList").EnumerateArray().Single(item =>
+                Value(item, "Tag").GetString() == tag);
+            Value(point, "XPosition").GetDouble().Should().Be(10.6);
+            Value(point, "YPosition").GetDouble().Should().Be(55);
+        }
+    }
+
+    [Test]
     public void Route_IsOneClosedLoopAndEveryAreaChangeHasAnExistingTransferDestination()
     {
         var points = new Dictionary<string, (string Area, JsonElement Point)>();
