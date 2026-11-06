@@ -2983,7 +2983,7 @@
         "Description": {
           "type": "cexolocstring",
           "value": {
-            "0": "An Echani temple master in elaborate travel vestments."
+            "0": "An Echani temple master in a white wrap tunic, split martial panels and a blue sash, with linen leg wraps and a broad hood."
           }
         },
         "Dex": {
@@ -3004,7 +3004,7 @@
               },
               "ArmorPart_Belt": {
                 "type": "byte",
-                "value": 25
+                "value": 2
               },
               "ArmorPart_LBicep": {
                 "type": "byte",
@@ -3012,19 +3012,19 @@
               },
               "ArmorPart_LFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 109
               },
               "ArmorPart_LFoot": {
                 "type": "byte",
-                "value": 52
+                "value": 63
               },
               "ArmorPart_LHand": {
                 "type": "byte",
-                "value": 3
+                "value": 2
               },
               "ArmorPart_LShin": {
                 "type": "byte",
-                "value": 85
+                "value": 202
               },
               "ArmorPart_LShoul": {
                 "type": "byte",
@@ -3032,15 +3032,15 @@
               },
               "ArmorPart_LThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 202
               },
               "ArmorPart_Neck": {
                 "type": "byte",
-                "value": 4
+                "value": 2
               },
               "ArmorPart_Pelvis": {
                 "type": "byte",
-                "value": 50
+                "value": 10
               },
               "ArmorPart_RBicep": {
                 "type": "byte",
@@ -3048,19 +3048,19 @@
               },
               "ArmorPart_RFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 109
               },
               "ArmorPart_RFoot": {
                 "type": "byte",
-                "value": 52
+                "value": 63
               },
               "ArmorPart_RHand": {
                 "type": "byte",
-                "value": 3
+                "value": 2
               },
               "ArmorPart_RShin": {
                 "type": "byte",
-                "value": 85
+                "value": 202
               },
               "ArmorPart_RShoul": {
                 "type": "byte",
@@ -3068,7 +3068,7 @@
               },
               "ArmorPart_RThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 202
               },
               "ArmorPart_Robe": {
                 "type": "byte",
@@ -3076,7 +3076,7 @@
               },
               "ArmorPart_Torso": {
                 "type": "byte",
-                "value": 55
+                "value": 21
               },
               "BaseItem": {
                 "type": "int",
@@ -3088,11 +3088,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 23
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 4
+                "value": 25
               },
               "Comment": {
                 "type": "cexostring",
@@ -3128,11 +3128,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 133
+                "value": 27
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 134
+                "value": 62
               },
               "LocalizedName": {
                 "type": "cexolocstring",
@@ -3142,11 +3142,11 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 8
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 9
+                "value": 0
               },
               "PaletteID": {
                 "type": "byte",
@@ -3199,7 +3199,7 @@
               "__struct_id": 2,
               "xArmorPart_Belt": {
                 "type": "word",
-                "value": 25
+                "value": 2
               },
               "xArmorPart_LBice": {
                 "type": "word",
@@ -3207,19 +3207,19 @@
               },
               "xArmorPart_LFArm": {
                 "type": "word",
-                "value": 4
+                "value": 109
               },
               "xArmorPart_LFoot": {
                 "type": "word",
-                "value": 52
+                "value": 63
               },
               "xArmorPart_LHand": {
                 "type": "word",
-                "value": 3
+                "value": 2
               },
               "xArmorPart_LShin": {
                 "type": "word",
-                "value": 85
+                "value": 202
               },
               "xArmorPart_LShou": {
                 "type": "word",
@@ -3227,15 +3227,15 @@
               },
               "xArmorPart_LThig": {
                 "type": "word",
-                "value": 87
+                "value": 202
               },
               "xArmorPart_Neck": {
                 "type": "word",
-                "value": 4
+                "value": 2
               },
               "xArmorPart_Pelvi": {
                 "type": "word",
-                "value": 50
+                "value": 10
               },
               "xArmorPart_RBice": {
                 "type": "word",
@@ -3243,19 +3243,19 @@
               },
               "xArmorPart_RFArm": {
                 "type": "word",
-                "value": 4
+                "value": 109
               },
               "xArmorPart_RFoot": {
                 "type": "word",
-                "value": 52
+                "value": 63
               },
               "xArmorPart_RHand": {
                 "type": "word",
-                "value": 3
+                "value": 2
               },
               "xArmorPart_RShin": {
                 "type": "word",
-                "value": 85
+                "value": 202
               },
               "xArmorPart_RShou": {
                 "type": "word",
@@ -3263,7 +3263,7 @@
               },
               "xArmorPart_RThig": {
                 "type": "word",
-                "value": 87
+                "value": 202
               },
               "xArmorPart_Robe": {
                 "type": "word",
@@ -3271,7 +3271,7 @@
               },
               "xArmorPart_Torso": {
                 "type": "word",
-                "value": 55
+                "value": 21
               }
             },
             {
@@ -3289,11 +3289,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 23
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 4
+                "value": 25
               },
               "Comment": {
                 "type": "cexostring",
@@ -3327,11 +3327,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 3
+                "value": 27
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 62
               },
               "LocalizedName": {
                 "id": 90531,
@@ -3342,11 +3342,11 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 5
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 63
+                "value": 0
               },
               "ModelPart1": {
                 "type": "byte",
@@ -4176,7 +4176,7 @@
         "Description": {
           "type": "cexolocstring",
           "value": {
-            "0": "An Echani temple disciple in a hooded practice tunic."
+            "0": "An Echani temple disciple in a sleeveless white-and-blue training coat, with a hood, cloth wrist wraps and soft trousers."
           }
         },
         "Dex": {
@@ -4197,7 +4197,7 @@
               },
               "ArmorPart_Belt": {
                 "type": "byte",
-                "value": 25
+                "value": 16
               },
               "ArmorPart_LBicep": {
                 "type": "byte",
@@ -4205,19 +4205,19 @@
               },
               "ArmorPart_LFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 127
               },
               "ArmorPart_LFoot": {
                 "type": "byte",
-                "value": 52
+                "value": 10
               },
               "ArmorPart_LHand": {
                 "type": "byte",
-                "value": 3
+                "value": 1
               },
               "ArmorPart_LShin": {
                 "type": "byte",
-                "value": 85
+                "value": 86
               },
               "ArmorPart_LShoul": {
                 "type": "byte",
@@ -4225,15 +4225,15 @@
               },
               "ArmorPart_LThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 106
               },
               "ArmorPart_Neck": {
                 "type": "byte",
-                "value": 4
+                "value": 50
               },
               "ArmorPart_Pelvis": {
                 "type": "byte",
-                "value": 50
+                "value": 28
               },
               "ArmorPart_RBicep": {
                 "type": "byte",
@@ -4241,19 +4241,19 @@
               },
               "ArmorPart_RFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 127
               },
               "ArmorPart_RFoot": {
                 "type": "byte",
-                "value": 52
+                "value": 10
               },
               "ArmorPart_RHand": {
                 "type": "byte",
-                "value": 3
+                "value": 1
               },
               "ArmorPart_RShin": {
                 "type": "byte",
-                "value": 85
+                "value": 86
               },
               "ArmorPart_RShoul": {
                 "type": "byte",
@@ -4261,7 +4261,7 @@
               },
               "ArmorPart_RThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 106
               },
               "ArmorPart_Robe": {
                 "type": "byte",
@@ -4269,7 +4269,7 @@
               },
               "ArmorPart_Torso": {
                 "type": "byte",
-                "value": 35
+                "value": 55
               },
               "BaseItem": {
                 "type": "int",
@@ -4281,11 +4281,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 16
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 27
               },
               "Comment": {
                 "type": "cexostring",
@@ -4321,11 +4321,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 133
+                "value": 62
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 134
+                "value": 25
               },
               "LocalizedName": {
                 "type": "cexolocstring",
@@ -4335,11 +4335,11 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 8
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 9
+                "value": 0
               },
               "PaletteID": {
                 "type": "byte",
@@ -4392,7 +4392,7 @@
               "__struct_id": 2,
               "xArmorPart_Belt": {
                 "type": "word",
-                "value": 25
+                "value": 16
               },
               "xArmorPart_LBice": {
                 "type": "word",
@@ -4400,19 +4400,19 @@
               },
               "xArmorPart_LFArm": {
                 "type": "word",
-                "value": 4
+                "value": 127
               },
               "xArmorPart_LFoot": {
                 "type": "word",
-                "value": 52
+                "value": 10
               },
               "xArmorPart_LHand": {
                 "type": "word",
-                "value": 3
+                "value": 1
               },
               "xArmorPart_LShin": {
                 "type": "word",
-                "value": 85
+                "value": 86
               },
               "xArmorPart_LShou": {
                 "type": "word",
@@ -4420,15 +4420,15 @@
               },
               "xArmorPart_LThig": {
                 "type": "word",
-                "value": 87
+                "value": 106
               },
               "xArmorPart_Neck": {
                 "type": "word",
-                "value": 4
+                "value": 50
               },
               "xArmorPart_Pelvi": {
                 "type": "word",
-                "value": 50
+                "value": 28
               },
               "xArmorPart_RBice": {
                 "type": "word",
@@ -4436,19 +4436,19 @@
               },
               "xArmorPart_RFArm": {
                 "type": "word",
-                "value": 4
+                "value": 127
               },
               "xArmorPart_RFoot": {
                 "type": "word",
-                "value": 52
+                "value": 10
               },
               "xArmorPart_RHand": {
                 "type": "word",
-                "value": 3
+                "value": 1
               },
               "xArmorPart_RShin": {
                 "type": "word",
-                "value": 85
+                "value": 86
               },
               "xArmorPart_RShou": {
                 "type": "word",
@@ -4456,7 +4456,7 @@
               },
               "xArmorPart_RThig": {
                 "type": "word",
-                "value": 87
+                "value": 106
               },
               "xArmorPart_Robe": {
                 "type": "word",
@@ -4464,7 +4464,7 @@
               },
               "xArmorPart_Torso": {
                 "type": "word",
-                "value": 35
+                "value": 55
               }
             },
             {
@@ -4482,11 +4482,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 16
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 27
               },
               "Comment": {
                 "type": "cexostring",
@@ -4520,11 +4520,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 3
+                "value": 62
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 25
               },
               "LocalizedName": {
                 "id": 90531,
@@ -4535,11 +4535,11 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 5
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 63
+                "value": 0
               },
               "ModelPart1": {
                 "type": "byte",
@@ -5369,7 +5369,7 @@
         "Description": {
           "type": "cexolocstring",
           "value": {
-            "0": "An Echani temple disciple in a hooded practice tunic."
+            "0": "An Echani temple disciple in a sleeveless white-and-blue training coat, with a slim hood, wrapped bracers and soft trousers."
           }
         },
         "Dex": {
@@ -5390,7 +5390,7 @@
               },
               "ArmorPart_Belt": {
                 "type": "byte",
-                "value": 25
+                "value": 70
               },
               "ArmorPart_LBicep": {
                 "type": "byte",
@@ -5398,7 +5398,7 @@
               },
               "ArmorPart_LFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 2
               },
               "ArmorPart_LFoot": {
                 "type": "byte",
@@ -5406,11 +5406,11 @@
               },
               "ArmorPart_LHand": {
                 "type": "byte",
-                "value": 3
+                "value": 1
               },
               "ArmorPart_LShin": {
                 "type": "byte",
-                "value": 85
+                "value": 86
               },
               "ArmorPart_LShoul": {
                 "type": "byte",
@@ -5418,15 +5418,15 @@
               },
               "ArmorPart_LThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 106
               },
               "ArmorPart_Neck": {
                 "type": "byte",
-                "value": 4
+                "value": 50
               },
               "ArmorPart_Pelvis": {
                 "type": "byte",
-                "value": 50
+                "value": 28
               },
               "ArmorPart_RBicep": {
                 "type": "byte",
@@ -5434,7 +5434,7 @@
               },
               "ArmorPart_RFArm": {
                 "type": "byte",
-                "value": 4
+                "value": 2
               },
               "ArmorPart_RFoot": {
                 "type": "byte",
@@ -5442,11 +5442,11 @@
               },
               "ArmorPart_RHand": {
                 "type": "byte",
-                "value": 3
+                "value": 1
               },
               "ArmorPart_RShin": {
                 "type": "byte",
-                "value": 85
+                "value": 86
               },
               "ArmorPart_RShoul": {
                 "type": "byte",
@@ -5454,7 +5454,7 @@
               },
               "ArmorPart_RThigh": {
                 "type": "byte",
-                "value": 87
+                "value": 106
               },
               "ArmorPart_Robe": {
                 "type": "byte",
@@ -5462,7 +5462,7 @@
               },
               "ArmorPart_Torso": {
                 "type": "byte",
-                "value": 35
+                "value": 55
               },
               "BaseItem": {
                 "type": "int",
@@ -5474,11 +5474,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 32
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 27
               },
               "Comment": {
                 "type": "cexostring",
@@ -5514,11 +5514,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 133
+                "value": 62
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 134
+                "value": 25
               },
               "LocalizedName": {
                 "type": "cexolocstring",
@@ -5528,11 +5528,11 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 8
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 9
+                "value": 0
               },
               "PaletteID": {
                 "type": "byte",
@@ -5585,7 +5585,7 @@
               "__struct_id": 2,
               "xArmorPart_Belt": {
                 "type": "word",
-                "value": 25
+                "value": 70
               },
               "xArmorPart_LBice": {
                 "type": "word",
@@ -5593,7 +5593,7 @@
               },
               "xArmorPart_LFArm": {
                 "type": "word",
-                "value": 4
+                "value": 2
               },
               "xArmorPart_LFoot": {
                 "type": "word",
@@ -5601,11 +5601,11 @@
               },
               "xArmorPart_LHand": {
                 "type": "word",
-                "value": 3
+                "value": 1
               },
               "xArmorPart_LShin": {
                 "type": "word",
-                "value": 85
+                "value": 86
               },
               "xArmorPart_LShou": {
                 "type": "word",
@@ -5613,15 +5613,15 @@
               },
               "xArmorPart_LThig": {
                 "type": "word",
-                "value": 87
+                "value": 106
               },
               "xArmorPart_Neck": {
                 "type": "word",
-                "value": 4
+                "value": 50
               },
               "xArmorPart_Pelvi": {
                 "type": "word",
-                "value": 50
+                "value": 28
               },
               "xArmorPart_RBice": {
                 "type": "word",
@@ -5629,7 +5629,7 @@
               },
               "xArmorPart_RFArm": {
                 "type": "word",
-                "value": 4
+                "value": 2
               },
               "xArmorPart_RFoot": {
                 "type": "word",
@@ -5637,11 +5637,11 @@
               },
               "xArmorPart_RHand": {
                 "type": "word",
-                "value": 3
+                "value": 1
               },
               "xArmorPart_RShin": {
                 "type": "word",
-                "value": 85
+                "value": 86
               },
               "xArmorPart_RShou": {
                 "type": "word",
@@ -5649,7 +5649,7 @@
               },
               "xArmorPart_RThig": {
                 "type": "word",
-                "value": 87
+                "value": 106
               },
               "xArmorPart_Robe": {
                 "type": "word",
@@ -5657,7 +5657,7 @@
               },
               "xArmorPart_Torso": {
                 "type": "word",
-                "value": 35
+                "value": 55
               }
             },
             {
@@ -5675,11 +5675,11 @@
               },
               "Cloth1Color": {
                 "type": "byte",
-                "value": 32
+                "value": 62
               },
               "Cloth2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 27
               },
               "Comment": {
                 "type": "cexostring",
@@ -5713,11 +5713,11 @@
               },
               "Leather1Color": {
                 "type": "byte",
-                "value": 3
+                "value": 62
               },
               "Leather2Color": {
                 "type": "byte",
-                "value": 3
+                "value": 25
               },
               "LocalizedName": {
                 "id": 90531,
@@ -5728,15 +5728,15 @@
               },
               "Metal1Color": {
                 "type": "byte",
-                "value": 5
+                "value": 0
               },
               "Metal2Color": {
                 "type": "byte",
-                "value": 63
+                "value": 0
               },
               "ModelPart1": {
                 "type": "byte",
-                "value": 39
+                "value": 44
               },
               "PaletteID": {
                 "type": "byte",
@@ -5789,7 +5789,7 @@
               "__struct_id": 1,
               "xModelPart1": {
                 "type": "word",
-                "value": 39
+                "value": 44
               }
             }
           ]

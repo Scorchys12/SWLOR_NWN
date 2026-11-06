@@ -1,6 +1,10 @@
 using System.Text.Json;
 using FluentAssertions;
 using NUnit.Framework;
+using SWLOR.Game.Server.Feature.AppearanceDefinition.ItemAppearance;
+using SWLOR.Game.Server.Feature.AppearanceDefinition.TintMap;
+using SWLOR.NWN.API.NWScript.Enum;
+using SWLOR.NWN.API.NWScript.Enum.Item;
 
 namespace SWLOR.Game.Server.Tests.Feature;
 
@@ -67,6 +71,55 @@ public class EchaniTempleMonksTests
                     $"{name} {field.Name} must match its native extended field");
             }
         }
+    }
+
+    [Test]
+    public void Outfits_UseEchaniColorsAndCatalogMartialClothing()
+    {
+        var catalog = ArmorAppearanceCatalog.Definitions[AppearanceType.Echani];
+        var parts = new Dictionary<string, AppearanceArmor>
+        {
+            ["Neck"] = AppearanceArmor.Neck, ["Torso"] = AppearanceArmor.Torso,
+            ["Belt"] = AppearanceArmor.Belt, ["Pelvis"] = AppearanceArmor.Pelvis,
+            ["LShoul"] = AppearanceArmor.LeftShoulder, ["LBicep"] = AppearanceArmor.LeftBicep,
+            ["LFArm"] = AppearanceArmor.LeftForearm, ["LHand"] = AppearanceArmor.LeftHand,
+            ["LThigh"] = AppearanceArmor.LeftThigh, ["LShin"] = AppearanceArmor.LeftShin,
+            ["LFoot"] = AppearanceArmor.LeftFoot, ["RShoul"] = AppearanceArmor.RightShoulder,
+            ["RBicep"] = AppearanceArmor.RightBicep, ["RFArm"] = AppearanceArmor.RightForearm,
+            ["RHand"] = AppearanceArmor.RightHand, ["RThigh"] = AppearanceArmor.RightThigh,
+            ["RShin"] = AppearanceArmor.RightShin, ["RFoot"] = AppearanceArmor.RightFoot,
+            ["Robe"] = AppearanceArmor.Robe
+        };
+        var silhouettes = new HashSet<string>();
+        foreach (var name in new[] { "master", "ren", "sai" })
+        {
+            var armor = Read($"Module/uti/esm_{name}_wear.uti.json");
+            var hood = Read($"Module/uti/esm_{name}_hood.uti.json");
+            foreach (var item in new[] { armor, hood })
+            {
+                var primary = Value(item, "Cloth1Color").GetInt32();
+                TintMapPaletteColors.GetColor(TintMapLayerType.Cloth1, primary)
+                    .Should().Be(new TintMapColor(255, 255, 255));
+                Value(item, "Cloth2Color").GetInt32().Should().Be(name == "master" ? 25 : 27);
+                Value(item, "Leather1Color").GetInt32().Should().Be(name == "master" ? 27 : 62);
+                Value(item, "Leather2Color").GetInt32().Should().Be(name == "master" ? 62 : 25);
+            }
+            foreach (var (field, slot) in parts)
+                ArmorAppearanceCatalog.GetStyles(catalog, slot).Should()
+                    .Contain(Value(armor, "ArmorPart_" + field).GetInt32(), $"{name} {field}");
+            var model = Value(hood, "ModelPart1").GetInt32();
+            catalog.Helmet.Should().Contain(model);
+            Value(hood, "xModelPart1").GetInt32().Should().Be(model);
+            Value(armor, "ArmorPart_LBicep").GetInt32().Should().Be(1);
+            Value(armor, "ArmorPart_RBicep").GetInt32().Should().Be(1);
+            Value(armor, "ArmorPart_LShoul").GetInt32().Should().Be(0);
+            Value(armor, "ArmorPart_RShoul").GetInt32().Should().Be(0);
+            Value(armor, "ArmorPart_Torso").GetInt32().Should().Be(name == "master" ? 21 : 55);
+            silhouettes.Add(string.Join(",", parts.Keys.Select(part => Value(armor, "ArmorPart_" + part).GetInt32())))
+                .Should().BeTrue("each monk has a distinct outfit combination");
+        }
+        TintMapPaletteColors.GetColor(TintMapLayerType.Cloth2, 27).Should().Be(new TintMapColor(35, 109, 161));
+        TintMapPaletteColors.GetColor(TintMapLayerType.Cloth2, 25).Should().Be(new TintMapColor(42, 56, 98));
     }
 
     [Test]

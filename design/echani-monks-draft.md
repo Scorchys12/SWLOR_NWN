@@ -1,6 +1,6 @@
 # Echani temple monks draft
 
-Master Vaelis, Disciple Ren and Disciple Sai use their own tags and controller. Their hooded vest/coat pieces are catalog-based approximations of the supplied reference. Color indices are provisional until rendered in the client.
+Master Vaelis, Disciple Ren and Disciple Sai use their own tags and controller. Ren and Sai wear sleeveless hooded coats with wrist wraps, soft trousers and cuffed boots, using white cloth (palette 62), blue trim (27) and navy leather details (25). Their hood, belt, forearm and boot combinations differ. Vaelis has a separate wrap tunic (torso 21), split panels (pelvis 10), sash belt (2), linen legs (202) and broad hood (55), with white and deeper navy cloth plus blue leather accents. These are existing catalog parts; rendered fit remains part of the owner's client check.
 
 The temple group uses Silver Gate's garden courtyard, identified by the circular paving at (10.86, 38.13), maple and waterfall in the owner's screenshot. Master Vaelis starts at (10.8, 39), Ren at (9.3, 36.5), and Sai at (12.3, 36.5). The temple stop and map note are at (10.8, 37.5); departure and return join the street at (10.6, 55).
 
