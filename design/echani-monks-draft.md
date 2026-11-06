@@ -8,7 +8,7 @@ Route: Silver Gate temple, Old Quarter residents, Tunnels, Riverway, Veylan Grov
 
 Map-note audit covers Eshan town areas and the route to the spa. Added identifiable guilds, market, flower shop, named residences, residential district, temple courtyard, cantina sign, spa dining area and guest rooms. Existing starport flight-terminal note retained. Scenic houses and unnamed tables are not asserted to be usable houses or restaurants. No existing NPC or patrol data is changed.
 
-Manual validation: the owner will check outfits, temple placement, public walking approaches, and the full live route and conversations in the NWN client.
+Client-verification waiver: the owner explicitly waived agent-run NWN client verification for this PR and said they will test it themselves. This covers rendered outfits, temple placement, public walking approaches, and the full live route and conversations. The owner will perform those checks manually; automated data and unit tests do not establish client verification.
 
 Packing correction: removed invalid 17-byte extended armor labels from the three outfit blueprints and their placed copies, and synchronized the native extended bicep fields with the intended byte values. A regression test checks native label lengths and matching armor parts.
 
