@@ -11,6 +11,32 @@ namespace SWLOR.Game.Server.Tests.Feature;
 public class SittablePlaceableWalkmeshTests
 {
     [Test]
+    public void GizkaDeluxeCounter_UsesTheFourVisibleChairsAsSeats()
+    {
+        static JsonElement Value(JsonElement placeable, string field) => placeable.GetProperty(field).GetProperty("value");
+
+        var path = Path.Combine(FindRoot(), "Module", "git", "pw_ar_narshahub.git.json");
+        using var area = JsonDocument.Parse(File.ReadAllText(path, System.Text.Encoding.Latin1));
+        var placeables = Value(area.RootElement, "Placeable List").EnumerateArray().ToArray();
+        var sign = placeables.Single(p => Value(p, "LocName").TryGetProperty("0", out var name) && name.GetString() == "Gizka Deluxe");
+        var counterX = Value(sign, "X").GetSingle();
+        var counterY = Value(sign, "Y").GetSingle();
+        var seats = placeables.Where(p => Value(p, "TemplateResRef").GetString() is "swd_chair001" or "night_invissit")
+            .Where(p => Value(p, "X").GetSingle() - counterX is > 0f and < 2f && Math.Abs(Value(p, "Y").GetSingle() - counterY) < 3f)
+            .ToArray();
+
+        seats.Should().HaveCount(4);
+        foreach (var seat in seats)
+        {
+            Value(seat, "Appearance").GetInt32().Should().Be(31631);
+            Value(seat, "Static").GetInt32().Should().Be(0);
+            Value(seat, "Useable").GetInt32().Should().Be(1);
+            Value(seat, "OnUsed").GetString().Should().Be("zep_use_chair");
+            Value(seat, "Z").GetSingle().Should().BeApproximately(0.2f, 0.05f, "the chair's use points must be at sidewalk height");
+        }
+    }
+
+    [Test]
     public void ChancellorChair_SeatsSittersFacingTheSeatFront()
     {
         var useNode = ReadEngineUseNodes(StructureWalkmesh(FindRoot(), StructureType.ChairChancellor)).Should().ContainSingle(

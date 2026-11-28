@@ -56216,7 +56216,9 @@
         },
         "Description": {
           "type": "cexolocstring",
-          "value": {}
+          "value": {
+            "0": "Click to Sit"
+          }
         },
         "DisarmDC": {
           "type": "byte",
@@ -56265,7 +56267,7 @@
         "LocName": {
           "type": "cexolocstring",
           "value": {
-            "0": "[SWTOR] Chair 001"
+            "0": "*Sit*"
           }
         },
         "OnClick": {
@@ -56322,7 +56324,7 @@
         },
         "OnUsed": {
           "type": "resref",
-          "value": ""
+          "value": "zep_use_chair"
         },
         "OnUserDefined": {
           "type": "resref",
@@ -56386,7 +56388,7 @@
         },
         "Useable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "VisTransformList": {
           "type": "list",
@@ -56583,7 +56585,7 @@
                   },
                   "ValueTo": {
                     "type": "float",
-                    "value": 1.5
+                    "value": -0.1471433
                   }
                 }
               }
@@ -56604,236 +56606,7 @@
         },
         "Z": {
           "type": "float",
-          "value": -1.447143316268921
-        }
-      },
-      {
-        "__struct_id": 9,
-        "AnimationState": {
-          "type": "byte",
-          "value": 0
-        },
-        "Appearance": {
-          "type": "dword",
-          "value": 1604
-        },
-        "AutoRemoveKey": {
-          "type": "byte",
-          "value": 0
-        },
-        "Bearing": {
-          "type": "float",
-          "value": -1.570796251296997
-        },
-        "BodyBag": {
-          "type": "byte",
-          "value": 0
-        },
-        "CloseLockDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Conversation": {
-          "type": "resref",
-          "value": ""
-        },
-        "CurrentHP": {
-          "type": "short",
-          "value": 15
-        },
-        "Description": {
-          "id": 16810880,
-          "type": "cexolocstring",
-          "value": {
-            "0": "Click to Sit"
-          }
-        },
-        "DisarmDC": {
-          "type": "byte",
-          "value": 15
-        },
-        "Faction": {
-          "type": "dword",
-          "value": 1
-        },
-        "Fort": {
-          "type": "byte",
-          "value": 16
-        },
-        "Hardness": {
-          "type": "byte",
-          "value": 5
-        },
-        "HasInventory": {
-          "type": "byte",
-          "value": 0
-        },
-        "HP": {
-          "type": "short",
-          "value": 15
-        },
-        "Interruptable": {
-          "type": "byte",
-          "value": 1
-        },
-        "KeyName": {
-          "type": "cexostring",
-          "value": ""
-        },
-        "KeyRequired": {
-          "type": "byte",
-          "value": 0
-        },
-        "Lockable": {
-          "type": "byte",
-          "value": 0
-        },
-        "Locked": {
-          "type": "byte",
-          "value": 0
-        },
-        "LocName": {
-          "id": 16812066,
-          "type": "cexolocstring",
-          "value": {
-            "0": "*Sit*"
-          }
-        },
-        "OnClick": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnClosed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDamaged": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDeath": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDisarm": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnHeartbeat": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnInvDisturbed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnLock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnMeleeAttacked": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnOpen": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnSpellCastAt": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnTrapTriggered": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUnlock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUsed": {
-          "type": "resref",
-          "value": "zep_use_chair"
-        },
-        "OnUserDefined": {
-          "type": "resref",
-          "value": ""
-        },
-        "OpenLockDC": {
-          "type": "byte",
-          "value": 18
-        },
-        "Plot": {
-          "type": "byte",
-          "value": 0
-        },
-        "PortraitId": {
-          "type": "word",
-          "value": 0
-        },
-        "Ref": {
-          "type": "byte",
-          "value": 0
-        },
-        "Static": {
-          "type": "byte",
-          "value": 0
-        },
-        "Tag": {
-          "type": "cexostring",
-          "value": "Night_InvisbileSit"
-        },
-        "TemplateResRef": {
-          "type": "resref",
-          "value": "night_invissit"
-        },
-        "TrapDetectable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapDetectDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapDisarmable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapFlag": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapOneShot": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapType": {
-          "type": "byte",
-          "value": 0
-        },
-        "Type": {
-          "type": "byte",
-          "value": 0
-        },
-        "Useable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Will": {
-          "type": "byte",
-          "value": 0
-        },
-        "X": {
-          "type": "float",
-          "value": 19.50264358520508
-        },
-        "Y": {
-          "type": "float",
-          "value": 97.17263793945313
-        },
-        "Z": {
-          "type": "float",
-          "value": 0.6805774569511414
+          "value": 0.2
         }
       },
       {
@@ -230829,7 +230602,7 @@
         },
         "Appearance": {
           "type": "dword",
-          "value": 1604
+          "value": 31631
         },
         "AutoRemoveKey": {
           "type": "byte",
@@ -230837,7 +230610,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570796012878418
+          "value": 1.570796251296997
         },
         "BodyBag": {
           "type": "byte",
@@ -230853,10 +230626,9 @@
         },
         "CurrentHP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Description": {
-          "id": 16810880,
           "type": "cexolocstring",
           "value": {
             "0": "Click to Sit"
@@ -230864,15 +230636,15 @@
         },
         "DisarmDC": {
           "type": "byte",
-          "value": 15
+          "value": 0
         },
         "Faction": {
           "type": "dword",
-          "value": 1
+          "value": 3
         },
         "Fort": {
           "type": "byte",
-          "value": 16
+          "value": 5
         },
         "Hardness": {
           "type": "byte",
@@ -230884,7 +230656,7 @@
         },
         "HP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Interruptable": {
           "type": "byte",
@@ -230900,14 +230672,13 @@
         },
         "Lockable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "Locked": {
           "type": "byte",
           "value": 0
         },
         "LocName": {
-          "id": 16812066,
           "type": "cexolocstring",
           "value": {
             "0": "*Sit*"
@@ -230975,231 +230746,6 @@
         },
         "OpenLockDC": {
           "type": "byte",
-          "value": 18
-        },
-        "Plot": {
-          "type": "byte",
-          "value": 0
-        },
-        "PortraitId": {
-          "type": "word",
-          "value": 0
-        },
-        "Ref": {
-          "type": "byte",
-          "value": 0
-        },
-        "Static": {
-          "type": "byte",
-          "value": 0
-        },
-        "Tag": {
-          "type": "cexostring",
-          "value": "Night_InvisbileSit"
-        },
-        "TemplateResRef": {
-          "type": "resref",
-          "value": "night_invissit"
-        },
-        "TrapDetectable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapDetectDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapDisarmable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapFlag": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapOneShot": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapType": {
-          "type": "byte",
-          "value": 0
-        },
-        "Type": {
-          "type": "byte",
-          "value": 0
-        },
-        "Useable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Will": {
-          "type": "byte",
-          "value": 0
-        },
-        "X": {
-          "type": "float",
-          "value": 19.56281471252441
-        },
-        "Y": {
-          "type": "float",
-          "value": 95.662353515625
-        },
-        "Z": {
-          "type": "float",
-          "value": 0.6728259921073914
-        }
-      },
-      {
-        "__struct_id": 9,
-        "AnimationState": {
-          "type": "byte",
-          "value": 0
-        },
-        "Appearance": {
-          "type": "dword",
-          "value": 31631
-        },
-        "AutoRemoveKey": {
-          "type": "byte",
-          "value": 0
-        },
-        "Bearing": {
-          "type": "float",
-          "value": 1.570796251296997
-        },
-        "BodyBag": {
-          "type": "byte",
-          "value": 0
-        },
-        "CloseLockDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Conversation": {
-          "type": "resref",
-          "value": ""
-        },
-        "CurrentHP": {
-          "type": "short",
-          "value": 10
-        },
-        "Description": {
-          "type": "cexolocstring",
-          "value": {}
-        },
-        "DisarmDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Faction": {
-          "type": "dword",
-          "value": 3
-        },
-        "Fort": {
-          "type": "byte",
-          "value": 5
-        },
-        "Hardness": {
-          "type": "byte",
-          "value": 5
-        },
-        "HasInventory": {
-          "type": "byte",
-          "value": 0
-        },
-        "HP": {
-          "type": "short",
-          "value": 10
-        },
-        "Interruptable": {
-          "type": "byte",
-          "value": 1
-        },
-        "KeyName": {
-          "type": "cexostring",
-          "value": ""
-        },
-        "KeyRequired": {
-          "type": "byte",
-          "value": 0
-        },
-        "Lockable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Locked": {
-          "type": "byte",
-          "value": 0
-        },
-        "LocName": {
-          "type": "cexolocstring",
-          "value": {
-            "0": "[SWTOR] Chair 001"
-          }
-        },
-        "OnClick": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnClosed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDamaged": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDeath": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDisarm": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnHeartbeat": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnInvDisturbed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnLock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnMeleeAttacked": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnOpen": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnSpellCastAt": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnTrapTriggered": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUnlock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUsed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUserDefined": {
-          "type": "resref",
-          "value": ""
-        },
-        "OpenLockDC": {
-          "type": "byte",
           "value": 0
         },
         "Plot": {
@@ -231256,7 +230802,7 @@
         },
         "Useable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "VisTransformList": {
           "type": "list",
@@ -231453,7 +230999,7 @@
                   },
                   "ValueTo": {
                     "type": "float",
-                    "value": 1.5
+                    "value": -0.1548962
                   }
                 }
               }
@@ -231474,7 +231020,7 @@
         },
         "Z": {
           "type": "float",
-          "value": -1.454896211624146
+          "value": 0.2
         }
       },
       {
@@ -231485,7 +231031,7 @@
         },
         "Appearance": {
           "type": "dword",
-          "value": 1604
+          "value": 31631
         },
         "AutoRemoveKey": {
           "type": "byte",
@@ -231493,7 +231039,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570796012878418
+          "value": 1.570796251296997
         },
         "BodyBag": {
           "type": "byte",
@@ -231509,10 +231055,9 @@
         },
         "CurrentHP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Description": {
-          "id": 16810880,
           "type": "cexolocstring",
           "value": {
             "0": "Click to Sit"
@@ -231520,15 +231065,15 @@
         },
         "DisarmDC": {
           "type": "byte",
-          "value": 15
+          "value": 0
         },
         "Faction": {
           "type": "dword",
-          "value": 1
+          "value": 3
         },
         "Fort": {
           "type": "byte",
-          "value": 16
+          "value": 5
         },
         "Hardness": {
           "type": "byte",
@@ -231540,7 +231085,7 @@
         },
         "HP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Interruptable": {
           "type": "byte",
@@ -231556,14 +231101,13 @@
         },
         "Lockable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "Locked": {
           "type": "byte",
           "value": 0
         },
         "LocName": {
-          "id": 16812066,
           "type": "cexolocstring",
           "value": {
             "0": "*Sit*"
@@ -231631,231 +231175,6 @@
         },
         "OpenLockDC": {
           "type": "byte",
-          "value": 18
-        },
-        "Plot": {
-          "type": "byte",
-          "value": 0
-        },
-        "PortraitId": {
-          "type": "word",
-          "value": 0
-        },
-        "Ref": {
-          "type": "byte",
-          "value": 0
-        },
-        "Static": {
-          "type": "byte",
-          "value": 0
-        },
-        "Tag": {
-          "type": "cexostring",
-          "value": "Night_InvisbileSit"
-        },
-        "TemplateResRef": {
-          "type": "resref",
-          "value": "night_invissit"
-        },
-        "TrapDetectable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapDetectDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapDisarmable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapFlag": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapOneShot": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapType": {
-          "type": "byte",
-          "value": 0
-        },
-        "Type": {
-          "type": "byte",
-          "value": 0
-        },
-        "Useable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Will": {
-          "type": "byte",
-          "value": 0
-        },
-        "X": {
-          "type": "float",
-          "value": 19.60433197021484
-        },
-        "Y": {
-          "type": "float",
-          "value": 94.25959777832031
-        },
-        "Z": {
-          "type": "float",
-          "value": 0.6999552249908447
-        }
-      },
-      {
-        "__struct_id": 9,
-        "AnimationState": {
-          "type": "byte",
-          "value": 0
-        },
-        "Appearance": {
-          "type": "dword",
-          "value": 31631
-        },
-        "AutoRemoveKey": {
-          "type": "byte",
-          "value": 0
-        },
-        "Bearing": {
-          "type": "float",
-          "value": 1.570796251296997
-        },
-        "BodyBag": {
-          "type": "byte",
-          "value": 0
-        },
-        "CloseLockDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Conversation": {
-          "type": "resref",
-          "value": ""
-        },
-        "CurrentHP": {
-          "type": "short",
-          "value": 10
-        },
-        "Description": {
-          "type": "cexolocstring",
-          "value": {}
-        },
-        "DisarmDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Faction": {
-          "type": "dword",
-          "value": 3
-        },
-        "Fort": {
-          "type": "byte",
-          "value": 5
-        },
-        "Hardness": {
-          "type": "byte",
-          "value": 5
-        },
-        "HasInventory": {
-          "type": "byte",
-          "value": 0
-        },
-        "HP": {
-          "type": "short",
-          "value": 10
-        },
-        "Interruptable": {
-          "type": "byte",
-          "value": 1
-        },
-        "KeyName": {
-          "type": "cexostring",
-          "value": ""
-        },
-        "KeyRequired": {
-          "type": "byte",
-          "value": 0
-        },
-        "Lockable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Locked": {
-          "type": "byte",
-          "value": 0
-        },
-        "LocName": {
-          "type": "cexolocstring",
-          "value": {
-            "0": "[SWTOR] Chair 001"
-          }
-        },
-        "OnClick": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnClosed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDamaged": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDeath": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDisarm": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnHeartbeat": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnInvDisturbed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnLock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnMeleeAttacked": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnOpen": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnSpellCastAt": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnTrapTriggered": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUnlock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUsed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUserDefined": {
-          "type": "resref",
-          "value": ""
-        },
-        "OpenLockDC": {
-          "type": "byte",
           "value": 0
         },
         "Plot": {
@@ -231912,7 +231231,7 @@
         },
         "Useable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "VisTransformList": {
           "type": "list",
@@ -232109,7 +231428,7 @@
                   },
                   "ValueTo": {
                     "type": "float",
-                    "value": 1.5
+                    "value": -0.14327
                   }
                 }
               }
@@ -232130,7 +231449,7 @@
         },
         "Z": {
           "type": "float",
-          "value": -1.443269968032837
+          "value": 0.2
         }
       },
       {
@@ -232141,7 +231460,7 @@
         },
         "Appearance": {
           "type": "dword",
-          "value": 1604
+          "value": 31631
         },
         "AutoRemoveKey": {
           "type": "byte",
@@ -232149,7 +231468,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570796012878418
+          "value": 1.570796251296997
         },
         "BodyBag": {
           "type": "byte",
@@ -232165,10 +231484,9 @@
         },
         "CurrentHP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Description": {
-          "id": 16810880,
           "type": "cexolocstring",
           "value": {
             "0": "Click to Sit"
@@ -232176,15 +231494,15 @@
         },
         "DisarmDC": {
           "type": "byte",
-          "value": 15
+          "value": 0
         },
         "Faction": {
           "type": "dword",
-          "value": 1
+          "value": 3
         },
         "Fort": {
           "type": "byte",
-          "value": 16
+          "value": 5
         },
         "Hardness": {
           "type": "byte",
@@ -232196,7 +231514,7 @@
         },
         "HP": {
           "type": "short",
-          "value": 15
+          "value": 10
         },
         "Interruptable": {
           "type": "byte",
@@ -232212,14 +231530,13 @@
         },
         "Lockable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "Locked": {
           "type": "byte",
           "value": 0
         },
         "LocName": {
-          "id": 16812066,
           "type": "cexolocstring",
           "value": {
             "0": "*Sit*"
@@ -232287,231 +231604,6 @@
         },
         "OpenLockDC": {
           "type": "byte",
-          "value": 18
-        },
-        "Plot": {
-          "type": "byte",
-          "value": 0
-        },
-        "PortraitId": {
-          "type": "word",
-          "value": 0
-        },
-        "Ref": {
-          "type": "byte",
-          "value": 0
-        },
-        "Static": {
-          "type": "byte",
-          "value": 0
-        },
-        "Tag": {
-          "type": "cexostring",
-          "value": "Night_InvisbileSit"
-        },
-        "TemplateResRef": {
-          "type": "resref",
-          "value": "night_invissit"
-        },
-        "TrapDetectable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapDetectDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapDisarmable": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapFlag": {
-          "type": "byte",
-          "value": 0
-        },
-        "TrapOneShot": {
-          "type": "byte",
-          "value": 1
-        },
-        "TrapType": {
-          "type": "byte",
-          "value": 0
-        },
-        "Type": {
-          "type": "byte",
-          "value": 0
-        },
-        "Useable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Will": {
-          "type": "byte",
-          "value": 0
-        },
-        "X": {
-          "type": "float",
-          "value": 19.62251472473145
-        },
-        "Y": {
-          "type": "float",
-          "value": 92.64231109619141
-        },
-        "Z": {
-          "type": "float",
-          "value": 0.7387115359306335
-        }
-      },
-      {
-        "__struct_id": 9,
-        "AnimationState": {
-          "type": "byte",
-          "value": 0
-        },
-        "Appearance": {
-          "type": "dword",
-          "value": 31631
-        },
-        "AutoRemoveKey": {
-          "type": "byte",
-          "value": 0
-        },
-        "Bearing": {
-          "type": "float",
-          "value": 1.570796251296997
-        },
-        "BodyBag": {
-          "type": "byte",
-          "value": 0
-        },
-        "CloseLockDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Conversation": {
-          "type": "resref",
-          "value": ""
-        },
-        "CurrentHP": {
-          "type": "short",
-          "value": 10
-        },
-        "Description": {
-          "type": "cexolocstring",
-          "value": {}
-        },
-        "DisarmDC": {
-          "type": "byte",
-          "value": 0
-        },
-        "Faction": {
-          "type": "dword",
-          "value": 3
-        },
-        "Fort": {
-          "type": "byte",
-          "value": 5
-        },
-        "Hardness": {
-          "type": "byte",
-          "value": 5
-        },
-        "HasInventory": {
-          "type": "byte",
-          "value": 0
-        },
-        "HP": {
-          "type": "short",
-          "value": 10
-        },
-        "Interruptable": {
-          "type": "byte",
-          "value": 1
-        },
-        "KeyName": {
-          "type": "cexostring",
-          "value": ""
-        },
-        "KeyRequired": {
-          "type": "byte",
-          "value": 0
-        },
-        "Lockable": {
-          "type": "byte",
-          "value": 1
-        },
-        "Locked": {
-          "type": "byte",
-          "value": 0
-        },
-        "LocName": {
-          "type": "cexolocstring",
-          "value": {
-            "0": "[SWTOR] Chair 001"
-          }
-        },
-        "OnClick": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnClosed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDamaged": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDeath": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnDisarm": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnHeartbeat": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnInvDisturbed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnLock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnMeleeAttacked": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnOpen": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnSpellCastAt": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnTrapTriggered": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUnlock": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUsed": {
-          "type": "resref",
-          "value": ""
-        },
-        "OnUserDefined": {
-          "type": "resref",
-          "value": ""
-        },
-        "OpenLockDC": {
-          "type": "byte",
           "value": 0
         },
         "Plot": {
@@ -232568,7 +231660,7 @@
         },
         "Useable": {
           "type": "byte",
-          "value": 0
+          "value": 1
         },
         "VisTransformList": {
           "type": "list",
@@ -232765,7 +231857,7 @@
                   },
                   "ValueTo": {
                     "type": "float",
-                    "value": 1.5
+                    "value": -0.1471445
                   }
                 }
               }
@@ -232786,7 +231878,7 @@
         },
         "Z": {
           "type": "float",
-          "value": -1.447144508361816
+          "value": 0.2
         }
       },
       {
